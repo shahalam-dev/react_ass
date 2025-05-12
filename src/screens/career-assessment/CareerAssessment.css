@@ -1,0 +1,192 @@
+/* Base styles with modern variables */
+:root {
+    --primary: #4361ee;
+    --primary-hover: #3a56d4;
+    --success: #38b000;
+    --success-hover: #2d9000;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --text: #212529;
+    --border-radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+    --container-width: 650px;
+}
+
+.career-assessment {
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    background-color: #f6f8ff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career-assessment-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Card styling with smooth shadows */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.question-section {
+    margin-bottom: 20px;
+}
+
+.question-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.results-section {
+    text-align: center;
+}
+
+.results-list,
+.responses-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.results-list li,
+.responses-list li {
+    margin-bottom: 10px;
+}
+
+.restart-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.restart-btn:hover {
+    background-color: #218838;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .restart-btn {
+        padding: 12px 20px;
+    }
+
+    .career-assessment-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 16px;
+    }
+
+    .card-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .option-btn {
+        padding: 10px 12px;
+    }
+}

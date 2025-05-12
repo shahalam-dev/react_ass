@@ -1,0 +1,126 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #f5f7fa, #e3f2fd);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 25px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Label Styling */
+label {
+    font-size: 18px;
+    color: #444;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Input Field Styles */
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+    border-color: #0056b3;
+    background-color: #e8f4ff;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+}
+
+/* Button Styling */
+.button1 {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #0072ff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Success Message */
+.success-message {
+    display: block;
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #dff0d8, #c8e6c9);
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

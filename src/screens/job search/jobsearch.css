@@ -1,0 +1,148 @@
+
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.8em;
+    color: #ff5733;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Subheading for Description */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    color: #444;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 14px;
+    font-size: 1.1em;
+    border: 2px solid #ff5733;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    max-width: 450px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    padding: 14px;
+    font-size: 1.2em;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f50;
+}
+
+/* Job Result Styling */
+#results {
+    margin-top: 40px;
+}
+
+.job-result {
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+.job-location {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    input[type="text"], button {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button, input[type="text"] {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .job-result {
+        padding: 15px;
+    }
+
+    .job-title {
+        font-size: 1.1em;
+    }
+}
